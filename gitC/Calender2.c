@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-
+//code by krish
 int main() {
    int date, month, year, week, superman, centaury, febmonth, lep, c,a;
 
