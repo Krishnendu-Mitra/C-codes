@@ -69,7 +69,7 @@ int main(){
                 printf("----------------------------------------------\n");
          while(1){
                 printf("\nEnter your choice : ");
-                scanf("%d", &choice);
+                scanf("%d", &choice); //for bidden change condition(switch)
                 switch(choice){
                 case 1:
                         printf("\nEnter the element: ");
@@ -88,7 +88,7 @@ int main(){
                 case 5:
                         exit(1);
                 case 6:
-                        printf("\nSource- https://github.com/Krishnendu-Mitra/C-codes.git \n");
+                        printf("\nSource- https://github.com/Krishnendu-Mitra/C-codes/blob/main/gitC/MenudrivenQueueUsingLinkedlist.c \n");
                         break;
                 default :
                         printf("\nInvalid choice\n");
