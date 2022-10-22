@@ -2,7 +2,7 @@
 
 #include <stdlib.h>
 
-//selection by krish
+//code by krish
 
 void swap(int *a, int *b) {
 
