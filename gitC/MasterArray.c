@@ -3,10 +3,10 @@
 //code by krish
 #define size 20
 int arr[size], dL = 0;
-void swap(int a, int b){
-  int temp = a;
-  a = b;
-  b = temp;
+void swap(int *a, int *b){
+  int temp = *a;
+  *a = *b;
+  *b = temp;
 }
 void insert(int element, int n){
 	if(dL == size || dL == n){
@@ -46,7 +46,7 @@ void sorting(){
 		for(j=0; j<dL-1; j++){
 		    for(i=0; i<dL-j-1; i++){
 			    if(arr[i]>arr[i+1]){
-				   swap(arr[i],arr[i+1]);
+				   swap(&arr[i],&arr[i+1]);
 			     }
 		      }
 		 }
@@ -112,9 +112,9 @@ void choiceHolder(){
 }
 int main(){
     printf("\t\t Menu \n");
-	printf("---------------------------------------------------------\n");
+	printf("-------------------------------------------------\n");
 	printf("1. Insertion\n2. Deletion\n3. Sorted order\n4. Searching\n5. Value change\n6. Display\n7. Quit\n");
-	printf("---------------------------------------------------------\n");
+	printf("-------------------------------------------------\n");
     choiceHolder();
 return 0;
 }
